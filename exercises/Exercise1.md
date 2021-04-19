@@ -12,12 +12,17 @@ Using your terminal, log in to either `itf-appn-test01.hpc.uio.no` or `itf-appn-
 + You should remember how to do this, but if not revisit exercise 1.3.9 and 1.3.3
 ```
 
-## 12.1.3. Installing Glimmer
+## 12.1.3. Downloading and installing Glimmer
+First, we need to download Glimmer from the internet:
 ```diff
 ! Download Glimmer from http://ccb.jhu.edu/software/glimmer/glimmer302b.tar.gz
+! Decompress the glimmer302b.tar.gz file
 ```
 
 ```diff
 Hint: 
 + Forgotten how to download files? revisit exercise 1.4.11
++ Forgotten how to decompress files? revisit exercise 1.4.12
 ```
+
+
