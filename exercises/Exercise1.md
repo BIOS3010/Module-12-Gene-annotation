@@ -52,7 +52,8 @@ We then need the E.coli sequence (in Fasta format) that we are going to use for 
 ! Look at the first 10 lines of the file. What do you see?
 ```
 ## 12.1.6. Identifying long, non-overlapping open reading frames (ORFs) to use as a Glimmer training set
-Before we actually run the glimmer programs, we need to start an interactive session. This is to avoid consuming common resources on the server. To do this, run:
+If you recall from the presentation, glimmer uses an input/training data set to determine some basic features of the gene structure of the organism. These ORFs are extracted using the long-orfs command. Run this:
+
 ```bash
 ./glimmer3.02/bin/long-orfs -n -t 1.15 ecoli.fa ecoli.longorfs
 ```
@@ -64,6 +65,13 @@ Look at the textual output resulting from executing the command above:
 ! How many ORFs does the long-orfs command identify?
 ```
 
+The identified ORFs are now found in the `ecoli.longorfs` file. 
+```diff
+! Look at the first 10 lines of the ecoli.longorfs file
+! What do you think column 1,2,3 and 4 indicate?
+```
 
+## 12.1.7. Extracting the actual sequence information (Fasta format) from the ORFs:
+TBD.
 
 
