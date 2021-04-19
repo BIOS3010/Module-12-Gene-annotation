@@ -42,3 +42,4 @@ To test the installation, do the following:
 ```bash
 ./glimmer3.02/bin/glimmer3 -h
 ```
+If the installation was successful, this should list all the command options of the glimmer command.
