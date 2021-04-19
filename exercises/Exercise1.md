@@ -125,9 +125,13 @@ predictFile = open("ecoli.predict")
 for line in predictFile:
   if line.startswith(">"):
     continue
-  splitted_line = line.split() name = splitted_line[0] start = splitted_line[1]
+  splitted_line = line.split()
+  name = splitted_line[0]
+  start = splitted_line[1]
   end = splitted_line[2]
-  frame = splitted_line[3] score = splitted_line[4] strand = frame[0]
+  frame = splitted_line[3]
+  score = splitted_line[4]
+  strand = frame[0]
   if strand == "+":
     print("chr" + "\t" + start + "\t" + end + "\t" + name + "\t" + score + "\t" + strand) 
   else:
