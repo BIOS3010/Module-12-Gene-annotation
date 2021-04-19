@@ -13,10 +13,12 @@ Using your terminal, log in to either `itf-appn-test01.hpc.uio.no` or `itf-appn-
 ```
 
 ## 12.1.3. Downloading and installing Glimmer
-First, we need to download Glimmer from the internet:
+First, we need to download Glimmer from the internet, and decompresss (unzip) the file:
 ```diff
 ! Download Glimmer from http://ccb.jhu.edu/software/glimmer/glimmer302b.tar.gz
 ! Decompress the glimmer302b.tar.gz file
+! Navigate into the glimmer3.02 folder 
+! Navigate further into the src folder 
 ```
 
 ```diff
@@ -24,5 +26,11 @@ Hint:
 + Forgotten how to download files? revisit exercise 1.4.11
 + Forgotten how to decompress files? revisit exercise 1.4.12
 ```
+To install/compile Glimmer. Execute the following command:
 
+```bash
+make
+```
+
+Then, navigate back the hte
 
