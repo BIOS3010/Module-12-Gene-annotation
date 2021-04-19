@@ -49,5 +49,13 @@ We then need the E.coli sequence (in Fasta format) that we are going to use for 
 
 ```diff
 ! Download to Module12: https://raw.githubusercontent.com/BIOS3010/Module-12-Gene-annotation/main/ecoli.fa
+! Look at the first 10 lines of the file. What do you see?
 ```
-## 12.1.6. 
+## 12.1.6. Identifying long, non-overlapping open reading frames (ORFs) to use as a Glimmer training set
+Before we actually run the glimmer programs, we need to start an interactive session. This is to avoid consuming common resources on the server. To do this, run:
+```bash
+./glimmer3.02/bin/long-orfs -n -t 1.15 ecoli.fa ecoli.longorfs
+``
+
+
+
