@@ -56,3 +56,5 @@ Click the text where it says “User Track:”
 ```diff
 ! Compared to the E. coli genome, which challenges do you observe for the human genome in predicting genes ab initio?
 ```diff
+
+When you are done: Go to [these exercises](exercises/Exercise2.md) and follow the steps
