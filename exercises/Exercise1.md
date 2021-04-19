@@ -121,16 +121,17 @@ As you may recall from the lecture, the BED file format is commonly used to repr
 The following Python script converts the output from the previous step to a BED file in the appropriate way:
 
 ```python
-predictFile = open("ecoli.predict") for line in predictFile:
-if line.startswith(">"):
-  continue
-splitted_line = line.split() name = splitted_line[0] start = splitted_line[1]
-end = splitted_line[2]
-frame = splitted_line[3] score = splitted_line[4] strand = frame[0]
-if strand == "+":
-  print("chr" + "\t" + start + "\t" + end + "\t" + name + "\t" + score + "\t" + strand) 
-else:
-  print("chr" + "\t" + end + "\t" + start + "\t" + name + "\t" + score + "\t" + strand)
+predictFile = open("ecoli.predict") 
+for line in predictFile:
+  if line.startswith(">"):
+    continue
+  splitted_line = line.split() name = splitted_line[0] start = splitted_line[1]
+  end = splitted_line[2]
+  frame = splitted_line[3] score = splitted_line[4] strand = frame[0]
+  if strand == "+":
+    print("chr" + "\t" + start + "\t" + end + "\t" + name + "\t" + score + "\t" + strand) 
+  else:
+    print("chr" + "\t" + end + "\t" + start + "\t" + name + "\t" + score + "\t" + strand)
 ```
 
 
