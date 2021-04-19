@@ -138,6 +138,9 @@ for line in predictFile:
     print("chr" + "\t" + end + "\t" + start + "\t" + name + "\t" + score + "\t" + strand)
 ```
 
-
-The following Python script converts the output from the previous step to a BED file in the appropriate way
-The following Python script converts the output from the previous step to a BED file in the appropriate way
+```diff
+! Try to explain what happens in the script
+! Paste the python code into a file named `glimmer2bed.py` on the server
+! Run the script and save the output into a file named `ecoli.bed`
+! Inspect the file `ecoli.bed` and explain all of the columns
+```
