@@ -20,3 +20,31 @@ The UCSC genome browser is a web-based browser. We have briefly looked at it ear
 - Click the top “Choose File” button:
 ![image](https://user-images.githubusercontent.com/5373069/115244643-6a585300-a124-11eb-95eb-982fd49cd306.png)
 
+- Locate and select the ecoli.bed file that you downloaded from Saga in step 3.1, and click “Submit”
+Click the text where it says “User Track:”
+![image](https://user-images.githubusercontent.com/5373069/115244773-8d830280-a124-11eb-964b-5cad72a55a47.png)
+
+- Rename the track name to ‘Gene Predictions’ then click the Submit button:
+
+![image](https://user-images.githubusercontent.com/5373069/115244832-9e337880-a124-11eb-95c5-c3e6a12eacf5.png)
+
+- Then click the “add custom tracks” button:
+
+![image](https://user-images.githubusercontent.com/5373069/115244895-abe8fe00-a124-11eb-8c95-58cd37166d37.png)
+
+- Click the “Genome Browser” in the top panel to go back to the genome browser view:
+
+![image](https://user-images.githubusercontent.com/5373069/115244946-ba371a00-a124-11eb-98b0-8aec241e3ed4.png)
+
+- This time with your gene predictions added as the top track.
+
+- Change the viewing details of your Gene predictions like this:
+![image](https://user-images.githubusercontent.com/5373069/115245039-cf13ad80-a124-11eb-9396-57ce920f0e78.png)
+
+Can you find the start codons in front of our predicted genes, and the stop codons at the end of the genes? Do this on genes on both strands (marked by >>>> as well as <<<<<).
+Move around in the browser view and compare your predictions with the annotated E. coli genes (Refseq).
+How similar are they?
+Can you identify any differences, and if so, could you try to explain what has happened in our predictions?
+Navigate to the UCSC genome browser for the human genome: https://genome- euro.ucsc.edu/cgi-bin/hgTracks?db=hg38
+Compared to the E. coli genome, which challenges do you observe for the human genome in predicting genes ab initio?
+
