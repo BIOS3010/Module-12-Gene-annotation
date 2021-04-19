@@ -72,6 +72,16 @@ The identified ORFs are now found in the `ecoli.longorfs` file.
 ```
 
 ## 12.1.7. Extracting the actual sequence information (Fasta format) from the ORFs:
-TBD.
+The file from above listed genome positional information only. We will need sequence information in order to calculate the probability model of the sequences in the ORFs. This is done using the `extract` command. Do the following:
 
+```bash
+./glimmer3.02/bin/extract -t ecoli.fa ecoli.longorfs > ecoli.train.fa
+```
+
+```diff
+! Look at the first 10 lines of the ecoli.train.fa file
+! Which format is this file in?
+```
+
+The file from above listed genome positional information only. We will need sequence information in order to calculate the probability model of the sequences in the ORFs. This is done using the `extract` command. Do the following:
 
