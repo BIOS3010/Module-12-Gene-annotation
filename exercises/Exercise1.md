@@ -33,7 +33,7 @@ make
 ```
 
 Then:
-```bash
+```diff
 ! Navigate back to the Module12 folder
 ```
 
