@@ -15,10 +15,12 @@ The UCSC genome browser is a web-based browser. We have briefly looked at it ear
 
 ## 12.2.3 Uploading the ecoli.bed file to the UCSC Genome Browser
 - Hold your mouse pointer over the “My Data” link a the top of the browser view and click “Custom Tracks”:
-![image](https://user-images.githubusercontent.com/5373069/115244590-59a7dd00-a124-11eb-9b8b-3550eb488af1.png)
+![image](https://user-images.githubusercontent.com/5373069/115245144-e8b4f500-a124-11eb-80dd-19247d0a239c.png)
+
 
 - Click the top “Choose File” button:
-![image](https://user-images.githubusercontent.com/5373069/115244643-6a585300-a124-11eb-95eb-982fd49cd306.png)
+![image](https://user-images.githubusercontent.com/5373069/115245171-f1a5c680-a124-11eb-8930-e59fdb5eb2fe.png)
+
 
 - Locate and select the ecoli.bed file that you downloaded from Saga in step 3.1, and click “Submit”
 Click the text where it says “User Track:”
