@@ -8,6 +8,8 @@ The main learning outcomes of this exercise are:
 - Visualizing and exploring our results in a Genome Browser system
 
 ## 12.1 Running Glimmer to predict genes in E. coli
-- Go to 
+- Go to [these exercises](exercises/Exercise1.md) and follow the steps
+
+## 12.2 Visualzing gene annotation in UCSC Genome Browser
 
 
