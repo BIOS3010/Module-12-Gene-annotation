@@ -37,3 +37,8 @@ Then:
 ! Navigate back to the Module12 folder
 ```
 
+## 12.1.4. Testing the installation
+To test the installation, do the following:
+```bash
+./glimmer3.02/bin/glimmer3 -h
+```
