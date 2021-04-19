@@ -55,7 +55,13 @@ We then need the E.coli sequence (in Fasta format) that we are going to use for 
 Before we actually run the glimmer programs, we need to start an interactive session. This is to avoid consuming common resources on the server. To do this, run:
 ```bash
 ./glimmer3.02/bin/long-orfs -n -t 1.15 ecoli.fa ecoli.longorfs
-``
+```
+
+```diff
+! Look at the terminal output. What do you see?
+! How many ORFs does the long-orfs command identify?
+```
+
 
 
 
