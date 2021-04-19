@@ -144,3 +144,8 @@ for line in predictFile:
 ! Run the script and save the output into a file named `ecoli.bed`
 ! Inspect the file `ecoli.bed` and explain all of the columns
 ```
+
+```diff
++ Note:
++ Forgotten how to redirect output to a file? See Exercise 1.4.8
+```
