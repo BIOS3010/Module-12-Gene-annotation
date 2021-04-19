@@ -22,7 +22,7 @@ First, we need to download Glimmer from the internet, and decompresss (unzip) th
 ```
 
 ```diff
-Hint: 
+Note: 
 + Forgotten how to download files? revisit exercise 1.4.11
 + Forgotten how to decompress files? revisit exercise 1.4.12
 ```
@@ -107,7 +107,8 @@ The program should run for a few seconds. The result file is called `ecoli.predi
 ```
 
 ```diff
-+ Note: Column 5 gives a score to each predicted gene.
++ Note: 
++ Column 5 gives a score to each predicted gene.
 ```
 ## 12.1.10 Converting the format of the glimmer output to BED file format
 As you may recall from the lecture, the BED file format is commonly used to represent information about specific positions in a reference genome. In this part of the exercise, we will use a Python script to convert the textual format of the final Glimmer output file (ecoli.predict) to BED format. 
