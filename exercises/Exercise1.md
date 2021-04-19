@@ -56,7 +56,9 @@ Before we actually run the glimmer programs, we need to start an interactive ses
 ```bash
 ./glimmer3.02/bin/long-orfs -n -t 1.15 ecoli.fa ecoli.longorfs
 ```
+The parameters we use here are standard. If you want to understand what these mean, use the ./glimmer3.02/bin/long-orfs -h command to read about these.
 
+Look at the textual output resulting from executing the command above:
 ```diff
 ! Look at the terminal output. What do you see?
 ! How many ORFs does the long-orfs command identify?
