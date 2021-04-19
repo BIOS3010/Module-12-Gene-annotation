@@ -45,4 +45,9 @@ To test the installation, do the following:
 If the installation was successful, this should list all the command options of the glimmer command.
 
 ## 12.1.5. Downloading the *E. coli* genome sequence
-We then need the E.coli sequence (in Fasta format) that we are going to use for gene prediction. In many cases, this file would be the result of a genome assembly of a new bacterium sequence. Here, however, we will use a well-known sequence from E.coli. This FASTA file (ecoli.fa) is provided together with this exercise. Upload the script to the server, and put it in the genefinding/ directory. If you have forgotten how to do this, refer to the UNIX exercises:
+We then need the E.coli sequence (in Fasta format) that we are going to use for gene prediction. In many cases, this file would be the result of a genome assembly of a new bacterium sequence. Here, however, we will use a well-known genome sequence from *E. coli*, which we first will download to the server:
+
+```diff
+! Download to Module12: https://raw.githubusercontent.com/BIOS3010/Module-12-Gene-annotation/main/ecoli.fa
+```
+## 12.1.6. 
