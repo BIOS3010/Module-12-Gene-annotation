@@ -85,3 +85,27 @@ The file from above listed genome positional information only. We will need sequ
 
 The file from above listed genome positional information only. We will need sequence information in order to calculate the probability model of the sequences in the ORFs. This is done using the `extract` command. Do the following:
 
+## 12.1.8. Building the ICM from the training sequences
+We will then use the `build-icm` command to build the ICM. Do this:
+```bash
+./glimmer3.02/bin/build-icm -r ecoli.icm < ecoli.train.fa
+```
+
+Note: Do **not** use `head` on the resulting ecoli.icm file. If you do, you will notice that it is not in a regular text format, but is actually a binary file.
+
+## 12.1.9 Running Glimmer to predict the position of the genes
+Now we are finally ready to predict where the genes are in the E. coli genome. This is done using the glimmer3 command. Do this:
+
+```bash
+./glimmer3.02/bin/glimmer3 ecoli.fa ecoli.icm ecoli
+```
+The program should run for a few seconds. The result file is called `ecoli.predict`. 
+
+```diff
+! Look at the first 10 lines of the ecoli.predict file
+! What do you think column 1, 2, 3 and 4 indicate?
+```
+
+```diff
++ Note: Column 5 gives a score to each predicted gene.
+```
