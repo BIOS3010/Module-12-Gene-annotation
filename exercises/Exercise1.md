@@ -32,5 +32,8 @@ To install/compile Glimmer. Execute the following command:
 make
 ```
 
-Then, navigate back the hte
+Then:
+```bash
+! Navigate back to the Module12 folder
+```
 
