@@ -43,10 +43,16 @@ Click the text where it says “User Track:”
 - Change the viewing details of your Gene predictions like this:
 ![image](https://user-images.githubusercontent.com/5373069/115245039-cf13ad80-a124-11eb-9396-57ce920f0e78.png)
 
-Can you find the start codons in front of our predicted genes, and the stop codons at the end of the genes? Do this on genes on both strands (marked by >>>> as well as <<<<<).
-Move around in the browser view and compare your predictions with the annotated E. coli genes (Refseq).
-How similar are they?
-Can you identify any differences, and if so, could you try to explain what has happened in our predictions?
-Navigate to the UCSC genome browser for the human genome: https://genome- euro.ucsc.edu/cgi-bin/hgTracks?db=hg38
-Compared to the E. coli genome, which challenges do you observe for the human genome in predicting genes ab initio?
+```diff
+! Find examples of start codons in front of our predicted genes?
+! Similar for stop codons at the end of the genes
+! Do this on genes on both strands (marked by >>>> as well as <<<<<)
+! How similar to the already annotated E.coli genes are your gene predictions?
+! Can you identify any differences? If so, explain what happened to those
+```
 
+- Navigate to the UCSC genome browser for the human genome: https://genome- euro.ucsc.edu/cgi-bin/hgTracks?db=hg38
+
+```diff
+! Compared to the E. coli genome, which challenges do you observe for the human genome in predicting genes ab initio?
+```diff
