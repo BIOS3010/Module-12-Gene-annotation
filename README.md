@@ -11,5 +11,7 @@ The main learning outcomes of this exercise are:
 - Go to [these exercises](exercises/Exercise1.md) and follow the steps
 
 ## 12.2 Visualzing gene annotation in UCSC Genome Browser
+- Go to [these exercises](exercises/Exercise2.md) and follow the steps
 
-
+## 12.3 Advanced/optional: Create a Python script that computes GC content of the `ecoli.fa` file
+- Go to [these exercises](exercises/Exercise3.md) and follow the steps
