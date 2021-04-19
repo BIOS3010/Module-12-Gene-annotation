@@ -109,3 +109,30 @@ The program should run for a few seconds. The result file is called `ecoli.predi
 ```diff
 + Note: Column 5 gives a score to each predicted gene.
 ```
+## 12.1.10 Converting the format of the glimmer output to BED file format
+As you may recall from the lecture, the BED file format is commonly used to represent information about specific positions in a reference genome. In this part of the exercise, we will use a Python script to convert the textual format of the final Glimmer output file (ecoli.predict) to BED format. 
+
+```diff
+! Inspect once again the format of the ecoli.predict file
+! What changes are needed to convert this file into a BED file?
+```
+
+## 12.1.11 Converting the format of the glimmer output to BED file format (part 2)
+The following Python script converts the output from the previous step to a BED file in the appropriate way:
+
+```python
+predictFile = open("ecoli.predict") for line in predictFile:
+if line.startswith(">"):
+  continue
+splitted_line = line.split() name = splitted_line[0] start = splitted_line[1]
+end = splitted_line[2]
+frame = splitted_line[3] score = splitted_line[4] strand = frame[0]
+if strand == "+":
+  print("chr" + "\t" + start + "\t" + end + "\t" + name + "\t" + score + "\t" + strand) 
+else:
+  print("chr" + "\t" + end + "\t" + start + "\t" + name + "\t" + score + "\t" + strand)
+```
+
+
+The following Python script converts the output from the previous step to a BED file in the appropriate way
+The following Python script converts the output from the previous step to a BED file in the appropriate way
