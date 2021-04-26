@@ -52,6 +52,11 @@ We then need the E.coli sequence (in Fasta format) that we are going to use for 
 ! Download to Module12: https://raw.githubusercontent.com/BIOS3010/Module-12-Gene-annotation/main/ecoli.fa
 ! Look at the first 10 lines of the file. What do you see?
 ```
+
+```diff
++ Forgotten how to look at first 10 lines of files? revisit exercise 1.4.4 
+```
+
 ## 12.1.6. Identifying long, non-overlapping open reading frames (ORFs) to use as a Glimmer training set
 If you recall from the presentation, glimmer uses an input/training data set to determine some basic features of the gene structure of the organism. These ORFs are extracted using the long-orfs command. Run this:
 
