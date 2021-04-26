@@ -167,3 +167,5 @@ for line in predictFile:
 + Note:
 + Forgotten how to redirect output to a file? See Exercise 1.4.8
 ```
+
+When you are done: Go to [these exercises](Exercise2.md) and follow the steps
