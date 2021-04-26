@@ -54,6 +54,7 @@ We then need the E.coli sequence (in Fasta format) that we are going to use for 
 ```
 
 ```diff
+Note: 
 + Forgotten how to look at first 10 lines of files? revisit exercise 1.4.4 
 ```
 
