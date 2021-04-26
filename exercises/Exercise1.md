@@ -86,16 +86,26 @@ The file from above listed genome positional information only. We will need sequ
 ```
 
 ```diff
+! What does the `>` symbol in the command above do?
 ! Look at the first 10 lines of the ecoli.train.fa file
 ! Which format is this file in?
 ```
 
 The file from above listed genome positional information only. We will need sequence information in order to calculate the probability model of the sequences in the ORFs. This is done using the `extract` command. Do the following:
+```diff
+Note:
++ Forgotten what the `>` does? Revisit exercise 1.4.8
+```
 
 ## 12.1.8. Building the ICM from the training sequences
 We will then use the `build-icm` command to build the ICM. Do this:
 ```bash
 ./glimmer3.02/bin/build-icm -r ecoli.icm < ecoli.train.fa
+```
+
+```diff
+Note:
++ The `<` redirects the content in the `ecoli.train.fa` file into the command on the left side
 ```
 
 Note: Do **not** use `head` on the resulting ecoli.icm file. If you do, you will notice that it is not in a regular text format, but is actually a binary file.
