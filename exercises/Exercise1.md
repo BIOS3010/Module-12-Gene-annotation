@@ -16,7 +16,7 @@ Using your terminal, log in to either `itf-appn-test01.hpc.uio.no` (group 1-5 do
 ## 12.1.3. Downloading and installing Glimmer
 First, we need to download Glimmer from the internet, and decompresss (unzip) the file:
 ```diff
-! Download Glimmer from http://ccb.jhu.edu/software/glimmer/glimmer302b.tar.gz
+! Download Glimmer from http://ccb.jhu.edu/software/glimmer/glimmer302b.tar.gz to the Module12 folder
 ! Decompress the glimmer302b.tar.gz file
 ! Navigate into the glimmer3.02 folder 
 ! Navigate further into the src folder 
