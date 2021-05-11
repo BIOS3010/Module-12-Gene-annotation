@@ -7,11 +7,6 @@ The main learning outcomes of this exercise are:
 - Downloading and uploading data to/from the server
 - Visualizing, exploring and understanding our results in a Genome Browser system
 
-## 12.0 Cleaning up your home space
-- Go to your results from last week
-- Delete this file from your home: m64094_200521_143350.ccs.fastq.gz
-- FLYE: Delete a file called assembly_graph.gfa
-- CANU: Delete files k12.unassembled.fasta and/or canu_assembly.unassembled.fasta 
 
 ## 12.1 Running Glimmer to predict genes in E. coli
 - Go to [these exercises](exercises/Exercise1.md) and follow the steps
