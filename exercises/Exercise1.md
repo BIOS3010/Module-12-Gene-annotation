@@ -28,7 +28,6 @@ Many of you now have lots of large (unnecessary) files in your home space, from 
 Then we can proceed with the actual exercses:
 
 
-1.3.10 and 1.3.11
 ## 12.1.3. Downloading and installing Glimmer
 First, we need to download Glimmer from the internet, and decompresss (unzip) the file:
 ```diff
