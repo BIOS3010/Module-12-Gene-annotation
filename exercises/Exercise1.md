@@ -2,7 +2,6 @@
 Using your terminal, log in to either `itf-appn-test01.hpc.uio.no` (group 1-5 do this) or `itf-appn-test02.hpc.uio.no` (group
 6-10). If you have forgotten how to do this, refer back to the [exercises from last week](https://github.com/BIOS3010/Module-7---HTS/blob/main/00-Get_started.md#logging-on-to-the-server).
 
-## 12.1.2. Logging in to the external server
 ```diff
 ! In your home directory, make a directory called `Module12` 
 ! Navigate into the newly created `Module12` folder
@@ -13,7 +12,7 @@ Using your terminal, log in to either `itf-appn-test01.hpc.uio.no` (group 1-5 do
 + You should remember how to do this, but if not revisit exercise 1.3.9 and 1.3.3
 ```
 
-## 12.1.2.1 Cleaning up your home space!
+## 12.1.2 Cleaning up your home space!
 Many of you now have lots of large (unnecessary) files in your home space, from the previous exercises. We need to clean up these to get enough space for the exercises. Do this:
 - Go to your results from last week(s)
 - Delete this file from your home: `m64094_200521_143350.ccs.fastq.gz`
