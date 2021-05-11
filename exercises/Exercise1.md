@@ -19,8 +19,16 @@ Many of you now have lots of large (unnecessary) files in your home space, from 
 - FLYE: Delete a file called `assembly_graph.gfa`
 - CANU: Delete files `k12.unassembled.fasta` and/or `canu_assembly.unassembled.fasta`
 
+
+```diff
++ Hint:
++ You should remember how to do this, but if not revisit exercise 1.3.10 and 1.3.11
+```
+
 Then we can proceed with the actual exercses:
 
+
+1.3.10 and 1.3.11
 ## 12.1.3. Downloading and installing Glimmer
 First, we need to download Glimmer from the internet, and decompresss (unzip) the file:
 ```diff
