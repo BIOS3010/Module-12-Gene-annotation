@@ -51,7 +51,7 @@ Click the text where it says “User Track:”
 ! Can you identify any differences? If so, explain what happened to those
 ```
 
-- Navigate to the UCSC genome browser for the human genome: https://genome- euro.ucsc.edu/cgi-bin/hgTracks?db=hg38
+- Navigate to the UCSC genome browser for the human genome: https://genome-euro.ucsc.edu/cgi-bin/hgTracks?db=hg38
 
 ```diff
 ! Compared to the E. coli genome, which challenges do you observe for the human genome in predicting genes ab initio?
