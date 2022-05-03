@@ -1,9 +1,8 @@
 ## 12.1.1. Logging in to the external server
-Using your terminal, log in to either `itf-appn-test01.hpc.uio.no` (group 1-5 do this) or `itf-appn-test02.hpc.uio.no` (group
-6-10). If you have forgotten how to do this, refer back to the [exercises from last week](https://github.com/BIOS3010/Module-7---HTS/blob/main/00-Get_started.md#logging-on-to-the-server).
+Using your terminal, log in to either `itf-appn-test01.hpc.uio.no` (odd-numbered groups) or `itf-appn-test02.hpc.uio.no` (even-numbered groups). If you have forgotten how to do this, refer back to the [relevant exercise from the HTS week](https://github.com/BIOS3010/Module-10-HTS/blob/main/00-Get_started.md#logging-on-to-the-server).
 
 ```diff
-! In your home directory, make a directory called `Module12` 
+! In your home directory, make a directory called `Module12`
 ! Navigate into the newly created `Module12` folder
 ```
 
@@ -13,19 +12,28 @@ Using your terminal, log in to either `itf-appn-test01.hpc.uio.no` (group 1-5 do
 ```
 
 ## 12.1.2 Cleaning up your home space!
-Many of you now have lots of large (unnecessary) files in your home space, from the previous exercises. We need to clean up these to get enough space for the exercises. Do this:
-- Go to your results from last week(s)
-- Delete this file from your home: `m64094_200521_143350.ccs.fastq.gz`
-- FLYE: Delete a file called `assembly_graph.gfa`
-- CANU: Delete files `k12.unassembled.fasta` and/or `canu_assembly.unassembled.fasta`
+Many of you now have lots of large (unnecessary) files in your home space, from the previous exercises. We need to clean up these to get enough space for the exercises.
 
+```diff
++ Do you want to know how much disk space you use?
++ run `du -hs ~` to see how much space you use in total
++ run `du -hs ~/*` to see how much space each folder you have uses
+```
+
+Now, do this:
+- Go to your results from last week(s)
+- If you made your own copy, delete this file with reads from your home: `m64094_200521_143350.ccs.fastq.gz`
+- flye: delete the folders called `00-assembly`,`10-consensus`,`20-repeat`,`30-contigger` and `40-polishing`
+- canu: delete the folders called `k12.seqStore` and `unitigging`
 
 ```diff
 + Hint:
 + You should remember how to do this, but if not revisit exercise 1.3.10 and 1.3.11
 ```
 
-Then we can proceed with the actual exercses:
+This will clean up between 18 and 35 Gb of disk space.
+
+Then we can proceed with the actual exercises:
 
 
 ## 12.1.3. Downloading and installing Glimmer
@@ -33,12 +41,12 @@ First, we need to download Glimmer from the internet, and decompresss (unzip) th
 ```diff
 ! Download Glimmer from http://ccb.jhu.edu/software/glimmer/glimmer302b.tar.gz to the Module12 folder
 ! Decompress the glimmer302b.tar.gz file
-! Navigate into the glimmer3.02 folder 
-! Navigate further into the src folder 
+! Navigate into the glimmer3.02 folder
+! Navigate further into the src folder
 ```
 
 ```diff
-Note: 
+Note:
 + Forgotten how to download files? revisit exercise 1.4.11
 + Forgotten how to decompress files? revisit exercise 1.4.12
 ```
@@ -47,6 +55,8 @@ To install/compile Glimmer. Execute the following command:
 ```bash
 make
 ```
+
+There will be a lot of output, including several warnings. These can safely be ignored.
 
 Then:
 ```diff
@@ -69,8 +79,8 @@ We then need the E.coli sequence (in Fasta format) that we are going to use for 
 ```
 
 ```diff
-Note: 
-+ Forgotten how to look at first 10 lines of files? revisit exercise 1.4.4 
+Note:
++ Forgotten how to look at first 10 lines of files? Revisit exercise 1.4.4
 ```
 
 ## 12.1.6. Identifying long, non-overlapping open reading frames (ORFs) to use as a Glimmer training set
@@ -87,7 +97,7 @@ Look at the textual output resulting from executing the command above:
 ! How many ORFs does the long-orfs command identify?
 ```
 
-The identified ORFs are now found in the `ecoli.longorfs` file. 
+The identified ORFs are now found in the `ecoli.longorfs` file.
 ```diff
 ! Look at the first 10 lines of the ecoli.longorfs file
 ! What do you think column 1,2,3 and 4 indicate?
@@ -116,6 +126,8 @@ We will then use the `build-icm` command to build the ICM. Do this:
 ./glimmer3.02/bin/build-icm -r ecoli.icm < ecoli.train.fa
 ```
 
+This will take a few seconds.
+
 ```diff
 Note:
 + The `<` redirects the content in the `ecoli.train.fa` file into the command on the left side
@@ -129,7 +141,7 @@ Now we are finally ready to predict where the genes are in the E. coli genome. T
 ```bash
 ./glimmer3.02/bin/glimmer3 ecoli.fa ecoli.icm ecoli
 ```
-The program should run for a few seconds. The result file is called `ecoli.predict`. 
+The program should run for some seconds. The result file is called `ecoli.predict`.
 
 ```diff
 ! Look at the first 10 lines of the ecoli.predict file
@@ -137,11 +149,11 @@ The program should run for a few seconds. The result file is called `ecoli.predi
 ```
 
 ```diff
-+ Note: 
++ Note:
 + Column 5 gives a score to each predicted gene.
 ```
 ## 12.1.10 Converting the format of the glimmer output to BED file format
-As you may recall from the lecture, the BED file format is commonly used to represent information about specific positions in a reference genome. In this part of the exercise, we will use a Python script to convert the textual format of the final Glimmer output file (ecoli.predict) to BED format. 
+As you may recall from the lecture, the BED file format is commonly used to represent information about specific positions in a reference genome. In this part of the exercise, we will use a Python script to convert the textual format of the final Glimmer output file (ecoli.predict) to BED format.
 
 ```diff
 ! Inspect once again the format of the ecoli.predict file
@@ -152,7 +164,7 @@ As you may recall from the lecture, the BED file format is commonly used to repr
 The following Python script converts the output from the previous step to a BED file in the appropriate way:
 
 ```python
-predictFile = open("ecoli.predict") 
+predictFile = open("ecoli.predict")
 for line in predictFile:
   if line.startswith(">"):
     continue
@@ -164,7 +176,7 @@ for line in predictFile:
   score = splitted_line[4]
   strand = frame[0]
   if strand == "+":
-    print("chr" + "\t" + start + "\t" + end + "\t" + name + "\t" + score + "\t" + strand) 
+    print("chr" + "\t" + start + "\t" + end + "\t" + name + "\t" + score + "\t" + strand)
   else:
     print("chr" + "\t" + end + "\t" + start + "\t" + name + "\t" + score + "\t" + strand)
 ```
@@ -172,6 +184,7 @@ for line in predictFile:
 ```diff
 ! Try to explain what happens in the script
 ! Paste the python code into a file named `glimmer2bed.py` in the Module12 folder
+! enable Python using `module load Python/3.8.2-GCCcore-9.3.0`
 ! Run the script and save the output into a file named `ecoli.bed`
 ! Inspect the file `ecoli.bed` and explain all of the columns
 ```

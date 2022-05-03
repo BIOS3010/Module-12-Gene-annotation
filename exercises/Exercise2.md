@@ -9,8 +9,8 @@ Recall from the last week's lecture how you download files from the server to yo
 ## 12.2.2 Logging into UCSC genome browser to visualize the E. coli genome
 The UCSC genome browser is a web-based browser. We have briefly looked at it earlier in the course. In this exercsise, we will use the “microbes” version of UCSC genome browser.
 
-- Go to the following web-page: http://microbes.ucsc.edu/cgi-bin/hgTracks?db=eschColi_K12 
-- Clicking the link should bring you to a small part of the E. coli genome in the browser. 
+- Go to the following web-page: http://microbes.ucsc.edu/cgi-bin/hgTracks?db=eschColi_K12
+- Clicking the link should bring you to a small part of the E. coli genome in the browser.
 - Familiarize yourself in the browser.
 
 ## 12.2.3 Uploading the ecoli.bed file to the UCSC Genome Browser
@@ -47,8 +47,13 @@ Click the text where it says “User Track:”
 ! Find examples of start codons in front of our predicted genes?
 ! Similar for stop codons at the end of the genes
 ! Do this on genes on both strands (marked by >>>> as well as <<<<<)
-! How similar to the already annotated E.coli genes are your gene predictions?
+! How similar to the already annotated E.coli genes are your gene predictions (the track 'Genbank RefSeq Gene Annotations')?
 ! Can you identify any differences? If so, explain what happened to those
+```
+
+```diff
++ Note:
++ You can rearrange the order of tracks by dragging them up or down. You can  use this to have the tracks you'd like to compare close to each other
 ```
 
 - Navigate to the UCSC genome browser for the human genome: https://genome-euro.ucsc.edu/cgi-bin/hgTracks?db=hg38
@@ -56,5 +61,3 @@ Click the text where it says “User Track:”
 ```diff
 ! Compared to the E. coli genome, which challenges do you observe for the human genome in predicting genes ab initio?
 ```
-
-

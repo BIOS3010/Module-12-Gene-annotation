@@ -8,4 +8,4 @@ If you go back to the (optional) Python exercises from the first week, you will 
 ! How does this GC content compare with the output from the Glimmer tool?
 ```
 
-Note that you have to run `module load Biopython/1.75-foss-2019b-Python-3.7.4` on the server to get access to Biopython.
+Note that you have to run `Biopython/1.78-foss-2020a-Python-3.8.2` on the server to get access to Biopython.
