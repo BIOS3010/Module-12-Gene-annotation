@@ -2,8 +2,8 @@
 Using your terminal, log in to either `itf-appn-test01.hpc.uio.no` (odd-numbered groups) or `itf-appn-test02.hpc.uio.no` (even-numbered groups). If you have forgotten how to do this, refer back to the [relevant exercise from the HTS week](https://github.com/BIOS3010/Module-10-HTS/blob/main/00-Get_started.md#logging-on-to-the-server).
 
 ```diff
-! In your home directory, make a directory called `Module12`
-! Navigate into the newly created `Module12` folder
+! In your home directory, make a directory called `Genome_annotation`
+! Navigate into the newly created `Genome_annotation` folder
 ```
 
 ```diff
@@ -39,7 +39,7 @@ Then we can proceed with the actual exercises:
 ## 12.1.3. Downloading and installing Glimmer
 First, we need to download Glimmer from the internet, and decompresss (unzip) the file:
 ```diff
-! Download Glimmer from http://ccb.jhu.edu/software/glimmer/glimmer302b.tar.gz to the Module12 folder
+! Download Glimmer from http://ccb.jhu.edu/software/glimmer/glimmer302b.tar.gz to the Genome_annotation folder
 ! Decompress the glimmer302b.tar.gz file
 ! Navigate into the glimmer3.02 folder
 ! Navigate further into the src folder
@@ -60,7 +60,7 @@ There will be a lot of output, including several warnings. These can safely be i
 
 Then:
 ```diff
-! Navigate back to the Module12 folder
+! Navigate back to the Genome_annotation folder
 ```
 
 ## 12.1.4. Testing the installation
@@ -183,7 +183,7 @@ for line in predictFile:
 
 ```diff
 ! Try to explain what happens in the script
-! Paste the python code into a file named `glimmer2bed.py` in the Module12 folder
+! Paste the python code into a file named `glimmer2bed.py` in the Genome_annotation folder
 ! enable Python using `module load Python/3.8.2-GCCcore-9.3.0`
 ! Run the script and save the output into a file named `ecoli.bed`
 ! Inspect the file `ecoli.bed` and explain all of the columns
