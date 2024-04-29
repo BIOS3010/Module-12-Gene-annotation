@@ -2,7 +2,7 @@
 - Download the sequence of the e.coli LacZ gene from NCBI in FASTA format [here](https://www.ncbi.nlm.nih.gov/gene/945006).
 - Name the downloaded file 'lacz.fa'
 
-This Python code snippet shows how to count occurences of codons in the downloaded sequence:
+This Python code snippet shows how to count occurences of (start) codons in the downloaded sequence:
 ```python
 import Bio
 from Bio import SeqIO
