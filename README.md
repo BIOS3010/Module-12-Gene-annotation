@@ -7,6 +7,8 @@ The main learning outcomes of this exercise are:
 - Downloading and uploading data to/from the server
 - Visualizing, exploring and understanding our results in a Genome Browser system
 
+## 12.0 Developing a Python tool to count codon occurences
+- Go to [these exercises](exercises/Exercise0.md) and follow the steps
 
 ## 12.1 Running Glimmer to predict genes in E. coli
 - Go to [these exercises](exercises/Exercise1.md) and follow the steps
