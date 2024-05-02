@@ -9,10 +9,10 @@ from Bio import SeqIO
 
 ecoli = SeqIO.parse("lacz.fa", "fasta")
 
-def countCodon(a,b,c, seq, frame): # frame is either 0, 1 or 2                                                                         n = len(seq)
+def countCodon(a,b,c, seq, frame): # frame is either 0, 1 or 2                                    n = len(seq)
     count = 0
     for i in range(frame, len(seq)-2, 3):
-        if seq[i] == a and seq[i+1] == b and seq[i+2] == c:                                                                            count +=1
+        if seq[i] == a and seq[i+1] == b and seq[i+2] == c:                                               count +=1
     return(count)
 
 for seq in ecoli:
