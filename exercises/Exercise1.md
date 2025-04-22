@@ -1,5 +1,5 @@
 ## 12.1.1. Logging in to the external server
-Using your terminal, log in to either `itf-appn-test01.hpc.uio.no` (odd-numbered groups) or `itf-appn-test02.hpc.uio.no` (even-numbered groups). If you have forgotten how to do this, refer back to the [relevant exercise from the HTS week](https://github.com/BIOS3010/Module-10-HTS/blob/main/00-Get_started.md#logging-on-to-the-server).
+Using your terminal, log in to the bioint02.hpc.uio.no server. If you have forgotten how to do this, refer back to the [relevant exercise from the HTS week](https://github.com/BIOS3010/Module-10-HTS/blob/main/00-Get_started.md#logging-on-to-the-server).
 
 ```diff
 ! In your home directory, make a directory called `Genome_annotation`
