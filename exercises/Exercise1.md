@@ -186,7 +186,7 @@ for line in predictFile:
 ```diff
 ! Try to explain what happens in the script
 ! Paste the python code into a file named `glimmer2bed.py` in the Genome_annotation folder
-! enable Python using `module load Python/3.8.2-GCCcore-9.3.0`
+! enable Python using `module load Python/3.8.6-GCCcore-10.2.0`
 ! Run the script and save the output into a file named `ecoli.bed`
 ! Inspect the file `ecoli.bed` and explain all of the columns
 ```
