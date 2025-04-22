@@ -74,7 +74,8 @@ If the installation was successful, this should list all the command options of 
 We then need the E.coli sequence (in Fasta format) that we are going to use for gene prediction. In many cases, this file would be the result of a genome assembly of a new bacterium sequence. Here, however, we will use a well-known genome sequence from *E. coli*, which we first will download to the server:
 
 ```diff
-! Download to Genome_annotation: https://raw.githubusercontent.com/BIOS3010/Module-12-Gene-annotation/main/ecoli.fa
+! Download to Genome_annotation: https://hgdownload.soe.ucsc.edu/hubs/GCF/000/750/555/GCF_000750555.1/GCF_000750555.1.fa.gz
+! Decompress the file
 ! Look at the first 10 lines of the file. What do you see?
 ```
 
