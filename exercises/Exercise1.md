@@ -169,6 +169,7 @@ predictFile = open("ecoli.predict")
 for line in predictFile:
   if line.startswith(">"):
     continue
+  chrname = "NZ_CP009273.1"
   splitted_line = line.split()
   name = splitted_line[0]
   start = splitted_line[1]
