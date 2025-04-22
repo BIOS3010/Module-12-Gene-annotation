@@ -9,7 +9,7 @@ Recall from the last week's lecture how you download files from the server to yo
 ## 12.2.2 Logging into UCSC genome browser to visualize the E. coli genome
 The UCSC genome browser is a web-based browser. We have briefly looked at it earlier in the course. In this exercsise, we will use the “microbes” version of UCSC genome browser.
 
-- Go to the following web-page: http://microbes.ucsc.edu/cgi-bin/hgTracks?db=eschColi_K12
+- Go to the following web-page: https://genome-euro.ucsc.edu/h/GCF_000750555.1
 - Clicking the link should bring you to a small part of the E. coli genome in the browser.
 - Familiarize yourself in the browser.
 
