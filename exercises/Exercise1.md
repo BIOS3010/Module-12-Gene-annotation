@@ -178,9 +178,9 @@ for line in predictFile:
   score = splitted_line[4]
   strand = frame[0]
   if strand == "+":
-    print("chr" + "\t" + start + "\t" + end + "\t" + name + "\t" + score + "\t" + strand)
+    print(chrname + "\t" + start + "\t" + end + "\t" + name + "\t" + score + "\t" + strand)
   else:
-    print("chr" + "\t" + end + "\t" + start + "\t" + name + "\t" + score + "\t" + strand)
+    print(chrname + "\t" + end + "\t" + start + "\t" + name + "\t" + score + "\t" + strand)
 ```
 
 ```diff
