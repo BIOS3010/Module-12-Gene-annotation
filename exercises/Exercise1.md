@@ -88,7 +88,7 @@ Note:
 If you recall from the presentation, glimmer uses an input/training data set to determine some basic features of the gene structure of the organism. These ORFs are extracted using the long-orfs command. Run this:
 
 ```bash
-./glimmer3.02/bin/long-orfs -n -t 1.15 ecoli.fa ecoli.longorfs
+./glimmer3.02/bin/long-orfs -n -t 1.15 GCF_000750555.1.fa ecoli.longorfs
 ```
 The parameters we use here are standard. If you want to understand what these mean, use the ./glimmer3.02/bin/long-orfs -h command to read about these.
 
