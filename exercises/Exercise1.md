@@ -140,7 +140,7 @@ Note: Do **not** use `head` on the resulting ecoli.icm file. If you do, you will
 Now we are finally ready to predict where the genes are in the E. coli genome. This is done using the glimmer3 command. Do this:
 
 ```bash
-./glimmer3.02/bin/glimmer3 ecoli.fa ecoli.icm ecoli
+./glimmer3.02/bin/glimmer3 GCF_000750555.1.fa ecoli.icm ecoli
 ```
 The program should run for some seconds. The result file is called `ecoli.predict`.
 
